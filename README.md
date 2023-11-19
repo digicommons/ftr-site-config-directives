@@ -84,7 +84,7 @@ See [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#http-he
 | `convert_double_br_tags`  | `convert_double_br_tags: yes` |                                 | scilogs.de.txt    |
 | `native_ad_clue`          |                             |                                   | buzzfeed.com.txt  |
 | `parser`                  | `parser: html5php`          | Possibly used with `html5php`, `gumbo`, `libxml`. <br> Hint on usage provided [here](https://help.fivefilters.org/full-text-rss/site-patterns.html#tidy-yes-no)                                  | nymag.com.txt     |
-| `skip_json_ld`            | `skip_json_ld: yes`         |                                   | spiegel.de.txt    |
+| `skip_json_ld`            | `skip_json_ld: yes`         | Explicitly [skip](https://github.com/j0k3r/graby/blob/master/src/SiteConfig/SiteConfig.php#L197) getting data from [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD). | spiegel.de.txt    |
 | `skip_id_or_class`        | `skip_id_or_class: Layout-sidebar`  |                           | github.com.txt    |
 | `src_lazy_load_attr`      | `src_lazy_load_attr: data-full-src` |                           | slate.fr.txt      |
 | `footnotes`               | `footnotes: no`             |                                   | jetzt.sueddeutsche.de.txt |
