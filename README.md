@@ -8,21 +8,21 @@ Please feel free to add information on directives and their use.
 > The FTR site pattern docs are available [here](https://help.fivefilters.org/full-text-rss/site-patterns.html#pattern-format).
 
 ### Metadata
-| Directive | Usage    | Graby support | Description |
-|-----------|----------|:-------------:|-------------|
-| `title`   |          | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#title-xpath)  |
-| `body`    |          | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#body-xpath)   |
-| `date`    |          | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#date-xpath)   |
-| `author`  |          | &#9989;       | [body](https://help.fivefilters.org/full-text-rss/site-patterns.html#author-xpath) |
+| Directive | Usage             | Graby support | Description |
+|-----------|-------------------|:-------------:|-------------|
+| `title`   | `title: [XPath]`  | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#title-xpath)  |
+| `body`    | `body: [XPath]`   | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#body-xpath)   |
+| `date`    | `date: [XPath]`   | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#date-xpath)   |
+| `author`  | `author: [XPath]` | &#9989;       | [body](https://help.fivefilters.org/full-text-rss/site-patterns.html#author-xpath) |
 
 ### Stripping, clearing, cleaning
 | Directive           | Usage                 | Graby support | Description  |
 |---------------------|-----------------------|:-------------:|--------------|
-| `strip`             |                       | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-xpath) |
-| `strip_attr`        |                       |               | See `faz.net.txt` for usage  |
-| `strip_comments`    | `strip_comments: no`  |               | ?            |
-| `strip_id_or_class` |                       | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-id-or-class-string) |
-| `strip_image_src`   |                       | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-image-src-string)   |
+| `strip`             | `strip: [XPath]`      | &#9989;       | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-xpath) |
+| `strip_attr`        | `strip_attr: [XPath]` |               | See `faz.net.txt` for usage (f.e. `strip_attr: //img/@width`)  |
+| `strip_comments`    | `strip_comments: [yes\|no]` |         | See `news.ycombinator.com.txt` for usage.<br> Possibly custom per-site comments parser? |
+| `strip_id_or_class` | `strip_id_or_class: [string]` | &#9989; | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-id-or-class-string) |
+| `strip_image_src`   | `strip_image_src: [string]` | &#9989; | [docs](https://help.fivefilters.org/full-text-rss/site-patterns.html#strip-image-src-string)   |
 
 ### (Pre-) Processing
 | Directive               | Usage      | Graby support | Description |
